@@ -1,4 +1,10 @@
 Tour::Application.routes.draw do
+  
+  resources :destinations do
+    resources :reviews
+  end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
